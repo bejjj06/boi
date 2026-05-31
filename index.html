@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You, My Love 💙</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       GLOBAL BACKGROUND (shows on all pages)
+  ════════════════════════════════════════ -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <canvas id="particles"></canvas>
+
+  <!-- ═══════════════════════════════════════
+       INTRO SCREEN  (edit the text here)
+  ════════════════════════════════════════ -->
+  <div id="intro">
+
+    <div class="intro-inner">
+
+      <p class="intro-label">A special message for my boi</p>
+
+      <h1 class="intro-name">Pearl</h1>
+
+      <p class="intro-sub"><sup></sup></p>
+
+      <div class="intro-divider">
+        <span class="div-line"></span>
+        <span class="div-heart">💙</span>
+        <span class="div-line"></span>
+      </div>
+
+      <button class="intro-btn" id="enterBtn" onclick="revealMain()">
+        <span class="btn-ring"></span>
+        <span class="btn-ring btn-ring-2"></span>
+        <span class="btn-text">Open</span>
+        <span class="btn-arrow">↓</span>
+      </button>
+
+      <p class="intro-hint">lets go</p>
+    </div>
+
+    <div class="intro-date-badge">May 31, 2026</div>
+  </div>
+
+
+  <div id="main" class="hidden">
+
+    <section class="panel panel-left">
+      <div class="msg-wrap">
+
+        <h2 class="msg-heading">
+          Dear
+          <em>Boi</em><br />
+        </h2>
+
+        <div class="msg-body">
+          <p>
+            Lezgo, haluyon na kita ay, dai kapaman nag sasawa? HAHAHAAHHAH may paganito pa talaga ang bebe mo🤣
+          </p>
+          <p>
+            Sana okay ka lang palagi and happy ka parin sa mga kaganapan mo sa buhay. Kayanon mo palagi
+            kasi wala kang no choice🤣. 
+            I hope na maging successful kita in the future and matupad ang mga pangarap ta sa buhay, kahit minsan
+            grabe talaga ang ma e-experience ta na struggles, normal nalang yan ang mahalaga is nakakaya nating lagpasan.
+          </p>
+          <p>
+            Thank you sa pagiging the best partner in life, focus lang sa goal baby and unahin parin yung mga priorities.
+            Nandito lang ako palagi susuportahan kita and tulungan tayo sa life, kaya natin to lezzgooooooo!!
+            I love you so much boi
+          </p>
+        </div>
+
+        <div class="msg-sign">
+          <span class="sign-from">Ang baby boi mo,</span>
+          <span class="sign-name">Begie</span>
+        </div>
+
+
+      </div>
+    </section>
+
+    <section class="panel panel-right">
+      <div class="video-wrap">
+
+        <p class="video-label">Our Story</p>
+
+        <div class="video-frame">
+          <video
+            id="mainVideo"
+            src="boi.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+            controls
+          ></video>
+          <div class="video-glow"></div>
+        </div>
+
+        <p class="video-caption">
+          Ito ang ating mga katarantaduhan. 💙
+        </p>
+
+      </div>
+    </section>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
